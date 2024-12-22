@@ -1,0 +1,713 @@
+/*
+Theme Name: Alto Nusantara
+Theme URI: https://altonusantara.com
+Author: Arif Amrullah
+Author URI: https://www.linkedin.com/in/arif-a-64236896
+Description: Alto Nusantara adalah tema default yang digunakan untuk website resmi Alto Nusantara (altonusantara.com) 
+Version: 1.0
+Text Domain: altonusantara
+*/
+
+/*@font-face {
+  font-family: 'ModernSans';
+  src: url('assets/fonts/ModernSans.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'OstrichSans';
+  src: url('assets/fonts/OstrichSans-Black.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-ExtraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('assets/fonts/BloggerSans/BloggerSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/BloggerSans/BloggerSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/BloggerSans/BloggerSans-Bold.woff') format('woff'), /* Modern Browsers */
+       url('assets/fonts/BloggerSans/BloggerSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/BloggerSans/BloggerSans-Bold.svg#BloggerSans-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('assets/fonts/BloggerSans/BloggerSans-Light.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/BloggerSans/BloggerSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/BloggerSans/BloggerSans-Light.woff') format('woff'), /* Modern Browsers */
+       url('assets/fonts/BloggerSans/BloggerSans-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/BloggerSans/BloggerSans-Light.svg#BloggerSans-Light') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('assets/fonts/BloggerSans/BloggerSans-Medium.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/BloggerSans/BloggerSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/BloggerSans/BloggerSans-Medium.woff') format('woff'), /* Modern Browsers */
+       url('assets/fonts/BloggerSans/BloggerSans-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/BloggerSans/BloggerSans-Medium.svg#BloggerSans-Medium') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'BloggerSans';
+  font-weight: 300;
+  margin: 0;
+  /*color: #da251a;*/
+  color: #fff;
+}
+
+header, section, div, footer {
+  display: block;
+}
+
+header, footer {
+  width: 100%;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'OstrichSans';
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+h1, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  padding: 50px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.grid:before,
+.grid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row {
+  width: 100%;
+}
+
+.row:after,
+.grid:after {
+  clear: both;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w33 {
+  width: 33.3333%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w66 {
+  width: 66.6666%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.left-0 {
+  margin-left: 0 !important;
+}
+
+.right-0 {
+  margin-right: 0 !important;
+}
+
+.top-offset-130 {
+  padding-top: 130px;
+}
+
+.v-center-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.bg-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay-blue:before {
+  background-color: #033958;
+  opacity: 0.9;
+}
+
+.overlay-white:before {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.overlay-red:before {
+  background-color: #da251a;
+  opacity: 0.9;
+}
+
+.nav > .container {
+  padding: 0 15px;
+}
+
+.nav-menu-top {
+  position: absolute;
+  height: 90px;
+  z-index: 999;
+  line-height: 71px;
+  /*top: 40px;*/
+  left: 0;
+  right: 0;
+}
+
+.menu-top ul {
+  height: 90px;
+  position: relative;
+  list-style: none;
+  text-align: right;
+}
+
+.menu-top ul:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.menu-top ul li {
+  float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 35px;
+}
+
+.menu-top ul li:last-child {
+  margin-right: 0;
+}
+
+.menu-top ul li a {
+  font-family: 'Raleway';
+  /*font-weight: 500;*/
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: .05em;
+}
+
+.menu-top ul li:hover a:hover, .menu-top ul li.current a {
+  /*color: #28166e;*/
+  color: #db383c;
+}
+
+.menu-top ul li.current {
+  box-shadow: inset 0 -4px 0 #8fc63f;
+}
+
+.logo-top {
+  width: 137px;
+  height: 70px;
+  margin-top: 20px;
+  background: url(assets/images/logo.png) center no-repeat;
+  background-size: contain;
+}
+
+.logo-top img {
+  opacity: 0;
+}
+
+.sticky .logo-top img {
+  opacity: 1
+}
+
+.welcome-slider {
+  position: absolute;
+  top: 270px;
+  z-index: 99;
+  width: 100%;
+  /*height: 662px;*/
+}
+
+.welcome-slider > .container {
+  padding: 0;
+  /*height: 100%;*/
+}
+
+.welcome-slider h1 {
+  /*color: #da251a;*/
+  font-family: 'Raleway';
+  font-size: 8.5vmin;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #000;
+}
+
+.welcome-slider h1 span {
+  color: #28166e;
+}
+
+.welcome-slider p {
+  font-family: 'Raleway';
+  font-size: 3.5vmin;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#desc {
+  position: relative;
+  background: #fff;
+  color: #333;
+}
+
+#desc > .container {
+  /*width: 100%;*/
+  /*margin: 0;*/
+}
+
+#desc .row {
+  /*margin: 0 auto;*/
+}
+
+#desc .bg-left {
+  height: 30vmin;
+  position: relative;
+}
+
+#desc .bg-right {
+  height: 30vmin;
+  position: relative;
+}
+
+#desc h1 {
+  color: #db383c;
+  text-align: left;
+}
+
+#desc h1 span {
+  color: #033958;
+}
+
+#desc p {
+  font-size: 2.5vmin;
+}
+
+#desc .divider {
+  margin: 0;
+  width: 81px;
+  background: #033958;
+}
+
+#facy {
+  position: relative;
+  background: url(assets/images/travel-plan.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+#facy h3, #facy p {
+  text-align: center;
+}
+
+#facy .pull-left {
+  padding: 20px;
+}
+
+.acco, .trans, .agent, .plan {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.acco {
+  display: block;
+  background: url(assets/icons/building-w.png) center center no-repeat;
+  background-size: 48px 48px;
+}
+
+.trans {
+  display: block;
+  background: url(assets/icons/aeroplane-w.png) center center no-repeat;
+  background-size: 48px 48px;
+}
+
+.agent {
+  display: block;
+  background: url(assets/icons/avatar-w.png) center center no-repeat;
+  background-size: 48px 48px;
+}
+
+.plan {
+  display: block;
+  background: url(assets/icons/planning-w.png) center center no-repeat;
+  background-size: 48px 48px;
+}
+
+.acco:hover:before {
+  display: block;
+  content: url(assets/icons/building-b.png);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.trans:hover:before {
+  display: block;
+  content: url(assets/icons/aeroplane-b.png);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.agent:hover:before {
+  display: block;
+  content: url(assets/icons/avatar-b.png);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.plan:hover:before {
+  display: block;
+  content: url(assets/icons/planning-b.png);
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  padding: 0;
+  margin: 20px auto 30px;
+  border: none;
+  background: #ccc;
+}
+
+.divider-sm {
+  width: 30px;
+  height: 2px;
+}
+
+#desty {
+  position: relative;
+  background: url(assets/images/raja-ampat-portrait.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#desty .wrapper:last-child .container {
+  padding: 0;
+}
+
+#desty .wrapper:first-child .container .grid:last-child {
+  padding-bottom: 50px !important;
+}
+
+#desty h1 {
+  color: #333;
+}
+
+.fa-view-o:before {
+  content: url(assets/icons/eye.png);
+  position: absolute;
+  bottom: -7px;
+  right: -2px;
+}
+
+.fa-book-o:before {
+  content: url(assets/icons/open-book.png);
+}
+
+.fa-view-o:hover:before {
+  content: url(assets/icons/eye-hover.png);
+}
+
+.fa-book-o:hover:before {
+  content: url(assets/icons/open-book-hover.png);
+}
+
+.button {
+  position: relative;
+  background: #db383c;
+  margin: 38px auto 0;
+  width: 170px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background: #033958;
+  cursor: pointer;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button a:visited {
+  color: #fff;
+}
+
+.desty-book {
+  background: #033958;
+  opacity: 0.9;
+  margin: 0 -100px 0;
+  padding: 20px 0 50px;
+}
+
+.desty-book h4 {
+  text-align: center;
+}
+
+#desty .desty-book h1 {
+  color: #fff;
+}
+
+#about {
+  height: 100vh;
+  position: relative;
+  background: url(assets/images/GOS-70.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#about h1 {
+  text-align: left;
+}
+
+#about h3 {
+  font-size: 2em;
+  line-height: 0;
+}
+
+#about .divider {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#tour-banner {
+  position: relative;
+  background: url(assets/images/d3eca5a3f335ca06262a38fdc0ce4977dac47e12-d82cc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#tour {
+
+}
+
+#tour h1 {
+  text-align: left;
+  color: #333;
+}
+
+#tour p {
+  color: #747474;
+}
+
+.bg-best-tour {
+  background: #033958;
+  padding: 20px;
+}
+
+.bg-best-tour h2 {
+  margin-top: 0;
+}
+
+.bg-best-tour img {
+  padding-bottom: 20px;
+}
+
+.bg-best-tour p {
+  color: #fff !important;
+}
+
+.bg-best-tour .button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#gallery-banner {
+  position: relative;
+  background: url(assets/images/d3eca5a3f335ca06262a38fdc0ce4977dac47e12-d82cc.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#contact {
+  height: 100vh;
+  position: relative;
+  background: url(assets/images/GOS-2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#contact h1 {
+  text-align: left;
+}
+
+#contact a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #fff;
+}
+
+.form-contact input,
+.form-contact select,
+.form-contact textarea {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px #fff solid;
+  background: none;
+}
+
+.form-contact textarea {
+  height: 200px;
+}
+
+.form-contact input[type='submit'] {
+  width: 100px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  background: #db383c;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #db383c;
+}
+
+footer .container {
+  padding: 10px 0;
+}
+
+footer .pull-right {
+  position: relative;
+}
+
+footer .pull-right p {
+  text-align: right;
+}

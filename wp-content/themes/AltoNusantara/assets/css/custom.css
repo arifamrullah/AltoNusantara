@@ -1,0 +1,95 @@
+.ms-slide .ms-slide-bgcont:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  /*background: rgba(51, 51, 51, 0.3);*/
+}
+
+.grid {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.grid figure {
+  max-width: 100% !important;
+}
+
+figure.effect-winston img {
+  width: 100%;
+}
+
+figure.effect-winston figcaption::before {
+  background-size: cover !important;
+}
+
+figure.effect-winston p {
+  padding-bottom: 4% !important;
+}
+
+figure.effect-winston a {
+  margin: 0px 20px !important;
+}
+
+.hi-icon-effect-3 .hi-icon {
+  box-shadow: none !important;
+}
+
+figure.effect-winston h2 {
+  font-family: 'BloggerSans';
+}
+
+.menu--shylock .menu__link {
+  color: #fff !important;
+}
+
+.menu--shylock .menu__link::before,
+.menu--shylock .menu__link::after {
+  background: #fff !important;
+}
+
+.admin-bar .cbp-af-header {
+  top: 32px;
+}
+
+.cbp-af-header {
+  height: 90px !important;
+  -webkit-transition: background-color 200ms ease-in-out !important;
+  -moz-transition: background-color 200ms ease-in-out !important;
+  -o-transition: background-color 200ms ease-in-out !important;
+  transition: background-color 200ms ease-in-out !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.cbp-af-header .cbp-af-inner {
+  max-width: none !important;
+}
+
+.cbp-af-header h1,
+.cbp-af-header nav a,
+.cbp-af-header.cbp-af-header-shrink h1,
+.cbp-af-header.cbp-af-header-shrink nav a {
+  line-height: 1 !important;
+}
+
+.cbp-af-header.cbp-af-header-shrink {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.cbp-af-header.cbp-af-header-shrink .logo-top {
+  height: 50px;
+}
+
+.cbp-af-header.cbp-af-header-shrink nav a {
+  color: #033958 !important;
+}
+
+.cbp-af-header.cbp-af-header-shrink .menu--shylock .menu__link::before,
+.cbp-af-header.cbp-af-header-shrink .menu--shylock .menu__link::after {
+  background: #033958 !important;
+}
